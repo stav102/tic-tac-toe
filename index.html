@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <title>X-circle Game</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css">
-  <title>X-circle Game</title>
-</head>
-
-<body>
-
-  <div class="container">
+  <body>
+    <div class="container">
       <h1 id="player"></h1>
       <div id="timer-label">Seconds for Turn: <span id="timer">30</span></div>
 
+      <div id="board" class="board">
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
 
-  <div id="board" class="board">
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-  </div>
+      <button id="Restart">Restart Game</button>
 
-  
-  <button id="Restart">Restart Game</button>
-  
-  <div class="rules-container">
-    <h2>Game Rules</h2>
-    <ul>
-      <li>Players take turns to place X or O.</li>
-      <li>The first player to get 3 of her/his marks in a row (up, down, across, or diagonally) wins the game.</li>
-      <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a draw.</li>
-    </ul>
-  </div>
-  
-  </div>
+      <div class="rules-container">
+        <h2 id="rules">Game Rules</h2>
+        <ul>
+          <li>Players take turns to place X or O.</li>
+          <li>
+            The first player to get 3 of her/his marks in a row (up, down,
+            across, or diagonally) wins the game.
+          </li>
+          <li>
+            When all 9 squares are full, the game is over. If no player has 3
+            marks in a row, the game ends in a draw.
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  <script src="index.js"></script>
-  
-
-
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
